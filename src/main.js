@@ -4,19 +4,13 @@ var isEqual = require('lodash.isequal');
 var ProgressBar = require('progressbar.js');
 
 class Shape extends React.Component {
-  static defaultProps = {
-      ShapeClass: null,
-      options: {},
-      progress: 0,
-      text: null,
-      initialAnimate: false,
-      containerStyle: {},
-      containerClassName: '.progressbar-container'
-  };
+  constructor(props) {
+    super(props)
 
-  state = {
-    shape: null
-  };
+    this.state = {
+      shape: null
+    };
+  }
 
   componentDidMount() {
     this._create(this.props);
@@ -90,8 +84,17 @@ class Shape extends React.Component {
 
     return <div className={className} style={style} ref="progressBar"></div>;
   }
-
 }
+
+Shape.defaulProps = {
+    ShapeClass: null,
+    options: {},
+    progress: 0,
+    text: null,
+    initialAnimate: false,
+    containerStyle: {},
+    containerClassName: '.progressbar-container'
+};
 
 var Line = (props) => <Shape {...this.props} ShapeClass={ProgressBar.Line} />;
 
