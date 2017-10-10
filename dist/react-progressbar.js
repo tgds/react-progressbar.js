@@ -184,15 +184,15 @@
   };
 
   var Line = function Line(props) {
-    return React.createElement(Shape, _extends({}, undefined.props, { ShapeClass: ProgressBar.Line }));
+    return React.createElement(Shape, _extends({}, props, { ShapeClass: ProgressBar.Line }));
   };
 
   var Circle = function Circle(props) {
-    return React.createElement(Shape, _extends({}, undefined.props, { ShapeClass: ProgressBar.Circle }));
+    return React.createElement(Shape, _extends({}, props, { ShapeClass: ProgressBar.Circle }));
   };
 
   var SemiCircle = function SemiCircle(props) {
-    return React.createElement(Shape, _extends({}, undefined.props, { ShapeClass: ProgressBar.SemiCircle }));
+    return React.createElement(Shape, _extends({}, props, { ShapeClass: ProgressBar.SemiCircle }));
   };
 
   module.exports = {

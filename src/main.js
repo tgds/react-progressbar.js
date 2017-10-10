@@ -96,11 +96,11 @@ Shape.defaulProps = {
     containerClassName: '.progressbar-container'
 };
 
-var Line = (props) => <Shape {...this.props} ShapeClass={ProgressBar.Line} />;
+var Line = (props) => <Shape {...props} ShapeClass={ProgressBar.Line} />;
 
-var Circle = (props) => <Shape {...this.props} ShapeClass={ProgressBar.Circle} />;
+var Circle = (props) => <Shape {...props} ShapeClass={ProgressBar.Circle} />;
 
-var SemiCircle = (props) => <Shape {...this.props} ShapeClass={ProgressBar.SemiCircle} />;
+var SemiCircle = (props) => <Shape {...props} ShapeClass={ProgressBar.SemiCircle} />;
 
 module.exports = {
     Line: Line,
