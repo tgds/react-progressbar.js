@@ -1,6 +1,6 @@
 {
   "name": "react-progressbar.js",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "React wrapper for progressbar.js",
   "main": "dist/react-progressbar.js",
   "repository": {
@@ -28,11 +28,13 @@
     "url": "https://github.com/kimmobrunfeldt/react-progressbar.js/issues"
   },
   "homepage": "https://github.com/kimmobrunfeldt/react-progressbar.js#readme",
+  "peerDependencies": {
+    "react": ">=15.0.0",
+    "react-dom": ">=15.0.0"
+  },
   "dependencies": {
     "lodash.isequal": "^4.1.4",
-    "progressbar.js": "^1.0.1",
-    "react": "^15.0.1",
-    "react-dom": "^15.0.1"
+    "progressbar.js": "^1.0.1"
   },
   "devDependencies": {
     "babel": "^6.5.2",
